@@ -5,4 +5,30 @@ img {
 body {
     text-align: center;
     font-family: "Arial";
+    color: black;
+    background-color:blue;
+    
+    -webkit-animation: colorchange 30s infinite; 
+    animation: colorchange 30s infinite;
+}
+
+@keyframes colorchange {
+     0%  {background: blue;}
+    25%  {background: green;}
+    50%  {background: forestgreen;}
+    75%  {background: purple;}
+    100% {background: blue;}
+}   
+
+#circle {
+    border-radius: 26%;
+}
+
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  min-width: 100%;
+  min-height: 100%;
 }
