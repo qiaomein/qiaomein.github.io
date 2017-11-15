@@ -6,19 +6,12 @@ body {
     text-align: center;
     font-family: "Arial";
     color: black;
-    background-color:blue;
+    
     
     -webkit-animation: colorchange 30s infinite; 
     animation: colorchange 30s infinite;
 }
 
-@-webkit-keyframes color change {
-     0%  {background: blue;}
-    25%  {background: green;}
-    50%  {background: forestgreen;}
-    75%  {background: purple;}
-    100% {background: blue;}
-}
 
 @keyframes colorchange {
      0%  {background: blue;}
