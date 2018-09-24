@@ -1,48 +1,167 @@
 <!DOCTYPE html>
-<html>
-        <head> 
-            <link rel="stylesheet" href="styles.css"/>
-            <title>Jack Qiao</title>
-        </head>
+<html lang="en">
+    <head> 
+        <link rel="stylesheet" href="styles.css"/>
+        <title>PSC Program</title>
+    </head>
         
         
-        <body>
-            <h1>
-                Jack Qiao
-            </h1>
-            <p> 
-                <strong>
-                    Science Academy
-                </strong>
-            </p> 
+        
+        
+        
+<body>
+    <div id="desc">
+        <h1>Let's Solve Problems!</h1>
+            <h2>Classic Game Mode</h2>
+           <center>
+               <p id="textclose">You will have 20 minutes for this round. 
+Do your best to collaborate as a team to solve these problems.
+Points will be deducted for each wrong answer.
+You may skip problems, and
+you may review skipped problems after going through ALL problems in the round. 
+However, skipped problems hold a point value half of it's original value.
+Skipping has no direct point deduction. 
+                </p>
+            </center>
             
-            <a href=# onclick="add()"><img id="circle" src="http://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-10/256/b-button-blood-type.png">
-            </a>
+      
+            
+    </div>
+        
+        
+        <!--table-->
+        
+<center>
+<div id="table_1">
+       
+    <div id="rhead"><h2>Round <text id="roundnum">1</text></h2></div>
+    <div id="qhead"></div>
+    <div id="score"></div>
+    
+    
+    
+        <hr>
+        
+        
+        <div id="center001">
+            Questions: 10 Score: <text id="score001">0</text></div>
+        <p id="question01"></p>
+        
+        <div id="input"></div>
+        
+        <p id="msg01"></p>
+        <br />
+        <br />  
+        
+        
+        
+        <div id="starter01">
+            <button onclick="begin001()" id="b001">Begin</button>
             <br>
-            <br>
-            You have: <input type="text" id="text"> clicks!
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-<!--
+        </div>
+        
+            <p id="n001"></p>
+
+</div>
+</center>
+        
+        
+       <!--table -->
+        
+        
+        
+        
+        
+<!--JavaSCRIPT-->        
+
 <script>
-var bcount=0
-function add() {
-    bcount = bcount + 1
-    document.getElementById('text').value = bcount;
-                }
+            var b = 0;
+            var d = 0;
+            var r=1;
+
+if (d=0) {
+    document.getElementById("rhead")="<h2>Round</h2>" + r;
+    document.getElementById("qhead")="";
+} else {
+    document.getElementById("rhead")="";
+}
+
+function begin001() {
+                document.getElementById("question01").innerHTML = "Heather compares the price of a new computer at two different stores. Store A offers 15% off the sticker price followed by a 90$ rebate, and store B offers 25% off the same sticker price with no rebate. Heather saves 15$ by buying the computer at store A instead of store B. What is the sticker price of the computer, in dollars?" + "<br /><br /><br />"; /*<button onclick=ans001() id=q1>10</button><br />" + "<button onclick=ans002() id=q2>8</button><br />" + "<button onclick=ans002() id=q3>25</button><br />" */
+                document.getElementById("starter01").innerHTML = "";
+                document.getElementById("rhead").innerHTML="";
+                document.getElementById("qhead").innerHTML="<h2>Question </h2>" + d;
+                document.getElementById("input").innerHTML="<form id = "quiz" name = "quiz"><input id = "textbox" type = "text" name = "question1"></form>";
+}
+
+
+
+
+
+/*
+
+function ans001() {
+    document.getElementById("score001").innerHTML = b++;
+document.getElementById("question01").innerHTML = "Correct";
+document.getElementById("starter01").innerHTML = "";
+document.getElementById("n001").innerHTML = "<button onclick=nxt1()>Next</button><br />";
+}
+function ans002() {
+document.getElementById("question01").innerHTML = "Incorrect";
+document.getElementById("starter01").innerHTML = "";
+document.getElementById("n001").innerHTML = "<button onclick=nxt1()>Next</button><br />";
+document.getElementById("attempts").innerHTML = c--;
+
+}
+function nxt1() {
+document.getElementById("question01").innerHTML = "What is 2 x 8?" + "<br /><br /><br />" + "<button onclick=ans004() id=q4>14</button><br />" + "<button onclick=ans004() id=q5>20</button><br />" + "<button onclick=ans003() id=q6>16</button><br />";
+document.getElementById("n001").innerHTML = "";
+document.getElementById("q001").innerHTML = d++;
+
+}
+function ans003() {
+    document.getElementById("score001").innerHTML = b++;
+    document.getElementById("question01").innerHTML = "Correct";
+    document.getElementById("starter01").innerHTML = "";
+    document.getElementById("n001").innerHTML = "<button onclick=nxt2()>Next</button><br />";
+}
+function ans004() {
+document.getElementById("question01").innerHTML = "Incorrect";
+document.getElementById("starter01").innerHTML = "";
+document.getElementById("n001").innerHTML = "<button onclick=nxt2()>Next</button><br />";
+document.getElementById("attempts").innerHTML = c--;
+if (c < 0) {
+    document.getElementById("question01").innerHTML = "";
+    document.getElementById("msg01").innerHTML = "Sorry. You lost!";
+    document.getElementById("n001").innerHTML = "";
+}
+}
+function nxt2() {
+document.getElementById("question01").innerHTML = "";
+document.getElementById("msg01").innerHTML = "End of Quiz.";
+document.getElementById("n001").innerHTML = "";
+}
+*/
+
 </script>
--->
-           
+
+
+<!--JavaSCRIPT-->    
+
+
+
+
+            
+
+            
+            
+            
+            
+            
+
+
+<h1 id="padding">Science Academy Problem Solving Club</h1>   
+
+        
 </body>
 </html> 
