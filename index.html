@@ -15,11 +15,22 @@ body, html {
   line-height: 1.8;
 }
 
+footer {
+	font-size: 15px;
+}
+
 /* Full height image header */
 .bgimg-1 {
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-image: url("bg.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-position: top;
+  background-size: cover;
+  background-image: url("bruh.jpg");
   min-height: 100%;
 }
 
@@ -61,18 +72,16 @@ body, html {
 
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small" style="color:#000000">Get with the current.</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Irresistably clean.</span><br>
-    <span class="w3-large" style="color:#000000">Cleaner. Faster. Better.</span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
-  </div>
+<header class="bgimg-1 w3-display-container" id="home">
+
+
 
 </header>
 
 <!-- About Section -->
-<div class="w3-container" style="padding:100px 16px" id="about">
+<div class="w3-container" style="padding:100px 16px; background-color:white" id="about">
+
+<!-- Story? 
   <h3 class="w3-center">OUR STORY</h3>
   <p class="w3-center w3-large" style="margin-left:100px; margin-right:100px">Ozan Karabulut and Om Vadodaria were inseparable since childhood. Both were fascinated by cars because of how complex and life-changing one invention truly was. They always promised each other that they would work together for the rest of their lives in the car industry, until Om was hospitalized.
 </p>
@@ -82,30 +91,17 @@ Ozan was devastated that he lost his best friend and that he couldn’t fulfill 
 </p>
 <p class="w3-center w3-large" style="margin-left:100px; margin-right:100px">
 	Ohm Industries began in 2015 and has become one of the leading companies in clean cars. It has become a multi-million dollar company in only five years with the goal to prevent anyone from dying due to carbon monoxide poisoning again. </p>
+-->
 
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Responsive</p>
-      <p>With thousands of dedicated employees around the world prepared to help, every customer
-feels apart of the Ohm Industries family.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Passion</p>
-      <p>Like our CEO, we as a company want to save the world—one car at a time.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Design</p>
-      <p>Each individual car requires countless hours to perfect so our users feel the luxury they deserve every drive.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Support</p>
-      <p>Our customer service representatives and mechanics work day and night, ready for anyone who
-needs assistance.</p>
-    </div>
+<h2 class="w3-center">About Us</h2>
+<p class="w3-center w3-xlarge" style="margin-left:100px; margin-right:100px"> We are a revolutionary electric car company that manufactures the latest, most advanced green vehicles while offering the single most diverse variety of cars.</p>
+
+<h2 class="w3-center">Mission Statement</h2>
+<p class="w3-center w3-xlarge" style="margin-left:100px; margin-right:100px">To provide the world with more green energy</p>
+
+
+
+  
   </div>
 </div>
 
@@ -113,13 +109,22 @@ needs assistance.</p>
 <div class="w3-container w3-black" style="padding:128px 16px" id="model_pi">
   <div class="w3-row-padding">
     <div class="w3-col m6">
-      <h3>Model Pi</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
-      <p><a href="#work" class="w3-button w3-black"> </i> Shop Now</a></p>
+      <h2>Model Pi</h2>
+      <p>This model was so well-rounded that we couldn't resist calling it the Model Pi. One of our personal favorites, Model Pi is perfect for welcoming even the most skeptical of newcomers to electric cars.</p>
+      <h4>Specs</h4>
+	<ul>Battery: long range</ul>
+<ul>Acceleration: 2.4 seconds 0-60 mph</ul>
+<ul>Range: 348 miles (EPA)</ul>
+<ul>Drive: All-Wheel Drive</ul>
+<ul>Seating: 5 Adults</ul>
+<ul>Weight: 4,941 lbs</ul>
+<ul>Onboard Charger Max: 11.5 kW max (48A)</ul>
     </div>
+
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="modelkappa.png" width="600" height="450">
+      <img src="modelkappa.png" style="float:right; width:50vw;margin-top:175px" >
     </div>
+
   </div>
 </div>
 
@@ -127,12 +132,21 @@ needs assistance.</p>
 <div class="w3-container w3-white" style="padding:128px 16px" id="model_rho">
   <div class="w3-row-padding">
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="modelkappa.png" width="600" height="450">
+      <img src="truck.jpg" style="float:left; width:35vw;margin-top:175px" >
     </div>
     <div class="w3-col m6">
-      <h3>Model Rho</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
-      <p><a href="#work" class="w3-button w3-black"> </i> Shop Now</a></p>
+      <h2>Model Rho</h2>
+      <p>Model Rho is for those who enjoy efficiency with power. A car that proves to tow almost
+anything definitely makes it one of our personal favorites.</p>
+      <h4>Specs</h4>
+<ul>Acceleration: 7 seconds 0-100 mph</ul>	
+<ul>Power: 750 hp / 10,325 lb-ft torque</ul>
+	<ul>Range: Up to 400 miles</ul>
+	<ul>Payload: 1,763 lbs</ul>
+	<ul>Towing: 11,023 lbs</ul>
+	<ul>Drive: All-Wheel Drive</ul>
+	<ul>Seating: 5 Adults</ul>
+	<ul>Charging Time: 20 minutes to full charge</ul>
     </div>
 
   </div>
@@ -142,12 +156,19 @@ needs assistance.</p>
 <div class="w3-container w3-black" style="padding:128px 16px" id="model_tao">
   <div class="w3-row-padding">
     <div class="w3-col m6">
-      <h3>Model Tao</h3>
+      <h2>Model Tao</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
-      <p><a href="#work" class="w3-button w3-black"> </i> Shop Now</a></p>
+      	 <h4>Specs</h4>
+<ul>Battery: long range</ul>
+<ul>Acceleration: 2.7 seconds 0-60 mph</ul>
+<ul>Range: 305 miles (EPA)</ul>
+<ul>Drive: All-Wheel Drive</ul>
+<ul>Seating: 7 Adults</ul>
+<ul>Weight: 5,531 lbs</ul>
+<ul>Onboard Charger Max: 11.5 kW max (48A)</ul>
     </div>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="modelkappa.png" width="600" height="450">
+      <img src="car3.jpg" style="float:right; width:65vw;margin-top:125px" >
     </div>
   </div>
 </div>
@@ -227,7 +248,7 @@ needs assistance.</p>
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-
+	<p style="font-size:10px">&copy; 2020 OHM INDUSTRIES</p>
   </div>
 
 </footer>
